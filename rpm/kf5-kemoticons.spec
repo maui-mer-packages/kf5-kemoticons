@@ -89,7 +89,7 @@ rm -rf %{buildroot}
 %defattr(-,root,root,-)
 %doc COPYING.LIB README.md
 %{_kf5_libdir}/libKF5Emoticons.so.*
-%{_kf5_qtplugindir}/kf5/*.so
+%{_kf5_qtplugindir}/kf5/*
 %{_kf5_datadir}/kservices5/*
 %{_kf5_datadir}/kservicetypes5/*
 %{_kf5_datadir}/emoticons/Glass
