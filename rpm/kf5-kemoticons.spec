@@ -9,7 +9,7 @@ Name:       kf5-kemoticons
 # << macros
 
 Summary:    KDE Frameworks 5 Tier 3 module for emoticons support
-Version:    4.100.0
+Version:    5.0.0
 Release:    1
 Group:      System/Base
 License:    GPLv2+
