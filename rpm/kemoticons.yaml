@@ -1,5 +1,5 @@
-Name         : kf5-kemoticons
-Version      : 5.0.0
+Name         : kemoticons
+Version      : 5.1.0
 Release      : 1
 Group        : System/Base
 License      : GPLv2+
@@ -25,9 +25,9 @@ PkgBR:
     - kf5-rpm-macros
     - extra-cmake-modules
     - qt5-tools
-    - kf5-karchive-devel
-    - kf5-kconfig-devel
-    - kf5-kservice-devel
+    - karchive-devel
+    - kconfig-devel
+    - kservice-devel
 PkgConfigBR:
     - Qt5Core
     - Qt5DBus
@@ -48,10 +48,10 @@ RequiresPostUn:
 Files:
     - "%doc COPYING.LIB README.md"
     - "%{_kf5_libdir}/libKF5Emoticons.so.*"
-    - "%{_kf5_qtplugindir}/kf5/*"
-    - "%{_kf5_datadir}/kservices5/*"
-    - "%{_kf5_datadir}/kservicetypes5/*"
-    - "%{_kf5_datadir}/emoticons/Glass"
+    - "%{_kf5_plugindir}/*"
+    - "%{_kf5_servicesdir}/*"
+    - "%{_kf5_servicetypesdir}/*"
+    - "%{_kf5_sharedir}/emoticons/Glass"
 
 SubPackages:
     - Name: devel
@@ -61,12 +61,12 @@ SubPackages:
         The %{name}-devel package contains the files necessary to develop applications
         that use %{name}.
       Requires:
-          - kf5-karchive-devel
-          - kf5-kconfig-devel
-          - kf5-kservice-devel
+          - karchive-devel
+          - kconfig-devel
+          - kservice-devel
       Files:
           - "%{_kf5_includedir}/kemoticons_version.h"
           - "%{_kf5_includedir}/KEmoticons"
           - "%{_kf5_libdir}/libKF5Emoticons.so"
-          - "%{_kf5_libdir}/cmake/KF5Emoticons"
-          - "%{_datadir}/qt5/mkspecs/modules/qt_KEmoticons.pri"
+          - "%{_kf5_cmakedir}/KF5Emoticons"
+          - "%{_kf5_mkspecsdir}/qt_KEmoticons.pri"
